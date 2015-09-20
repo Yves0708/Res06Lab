@@ -50,27 +50,27 @@ public class Res06Activity extends Activity {
 		animFadein = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
 		 // set animation listener
 		animFadein.setAnimationListener(animationListener);
-		animFadeout = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animFadeout = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
 		animFadeout.setAnimationListener(animationListener);
-		animBlink = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animBlink = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.blink);
 		animBlink.setAnimationListener(animationListener);
-		animZoomin = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animZoomin = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom_in);
 		animZoomin.setAnimationListener(animationListener);
-		animZoomout = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animZoomout = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom_out);
 		animZoomout.setAnimationListener(animationListener);
-		animRotate = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animRotate = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate);
 		animRotate.setAnimationListener(animationListener);
-		animMove = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animMove = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.move);
 		animMove.setAnimationListener(animationListener);
-		animSlideup = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animSlideup = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_up);
 		animSlideup.setAnimationListener(animationListener);
-		animSlidedown = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animSlidedown = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_down);
 		animSlidedown.setAnimationListener(animationListener);
-		animBounce = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animBounce = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.bounce);
 		animBounce.setAnimationListener(animationListener);
-		animSequential = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animSequential = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.sequential);
 		animSequential.setAnimationListener(animationListener);
-		animTogether = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+		animTogether = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.together);
 		animTogether.setAnimationListener(animationListener);
        
     }
