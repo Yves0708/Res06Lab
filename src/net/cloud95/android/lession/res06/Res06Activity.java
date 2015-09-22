@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Res06Activity extends Activity {
-	TextView textView1;
+	ImageView imageView01;
 	AnimationListener animationListener;
     // Animation 動畫器
     Animation animFadein, animFadeout, animZoomin, animZoomout,
@@ -22,31 +22,31 @@ public class Res06Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res06);
-        textView1=(TextView)findViewById(R.id.textView1);
-//        //設定動畫監聽的受委任者
-//        animationListener = new AnimationListener() {
-//			
-//			@Override
-//			public void onAnimationStart(Animation animation) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//			
-//			@Override
-//			public void onAnimationRepeat(Animation animation) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//			
-//			@Override
-//			public void onAnimationEnd(Animation animation) {
-//				// TODO Auto-generated method stub
-//				//Take any action after completing the animation
-//				
-//				Toast.makeText(Res06Activity.this, "動畫結束", Toast.LENGTH_LONG).show();
-//				
-//			}
-//		};
+        imageView01=(ImageView)findViewById(R.id.imageView1);
+        //設定動畫監聽的受委任者
+        animationListener = new AnimationListener() {
+			
+			@Override
+			public void onAnimationStart(Animation animation) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onAnimationEnd(Animation animation) {
+				// TODO Auto-generated method stub
+				//Take any action after completing the animation
+				
+				Toast.makeText(Res06Activity.this, "動畫結束", Toast.LENGTH_LONG).show();
+				
+			}
+		};
         // load the animation
 		animFadein = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
 		 // set animation listener
@@ -74,47 +74,47 @@ public class Res06Activity extends Activity {
 		animTogether = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.together);
 		animTogether.setAnimationListener(animationListener);
 		
-		textView1.startAnimation(animMove);
+		
     }
-//    public void btnBeClicked(View view){
-//    	switch (view.getId()){
-//    		//根據不同按鈕啟動不同動畫
-//    	case R.id.fadeinbtn:
-//    		imageView01.startAnimation(animFadein);
-//    		break;
-//    	case R.id.fadeoutbtn:
-//    		imageView01.startAnimation(animFadeout);
-//    		break;
-//    	case R.id.blinkbtn:
-//    		imageView01.startAnimation(animBlink);
-//    		break;
-//    	case R.id.zoominbtn:
-//    		imageView01.startAnimation(animZoomin);
-//    		break;
-//    	case R.id.zoomoutbtn:
-//    		imageView01.startAnimation(animZoomout);
-//    		break;
-//    	case R.id.rotatebtn:
-//    		imageView01.startAnimation(animRotate);
-//    		break;
-//    	case R.id.movebtn:
-//    		imageView01.startAnimation(animMove);
-//    		break;
-//    	case R.id.slideupbtn:
-//    		imageView01.startAnimation(animSlideup);
-//    		break;
-//    	case R.id.slidedownbtn:
-//    		imageView01.startAnimation(animSlidedown);
-//    		break;
-//    	case R.id.bouncebtn:
-//    		imageView01.startAnimation(animBounce);
-//    		break;
-//    	case R.id.sequentialbtn:
-//    		imageView01.startAnimation(animSequential);
-//    		break;
-//    	case R.id.togetherbtn:
-//    		imageView01.startAnimation(animTogether);
-//    		break;
-//    	}
- // }
+    public void btnBeClicked(View view){
+    	switch (view.getId()){
+    		//根據不同按鈕啟動不同動畫
+    	case R.id.fadeinbtn:
+    		imageView01.startAnimation(animFadein);
+    		break;
+    	case R.id.fadeoutbtn:
+    		imageView01.startAnimation(animFadeout);
+    		break;
+    	case R.id.blinkbtn:
+    		imageView01.startAnimation(animBlink);
+    		break;
+    	case R.id.zoominbtn:
+    		imageView01.startAnimation(animZoomin);
+    		break;
+    	case R.id.zoomoutbtn:
+    		imageView01.startAnimation(animZoomout);
+    		break;
+    	case R.id.rotatebtn:
+    		imageView01.startAnimation(animRotate);
+    		break;
+    	case R.id.movebtn:
+    		imageView01.startAnimation(animMove);
+    		break;
+    	case R.id.slideupbtn:
+    		imageView01.startAnimation(animSlideup);
+    		break;
+    	case R.id.slidedownbtn:
+    		imageView01.startAnimation(animSlidedown);
+    		break;
+    	case R.id.bouncebtn:
+    		imageView01.startAnimation(animBounce);
+    		break;
+    	case R.id.sequentialbtn:
+    		imageView01.startAnimation(animSequential);
+    		break;
+    	case R.id.togetherbtn:
+    		imageView01.startAnimation(animTogether);
+    		break;
+    	}
+  }
 }

@@ -30,7 +30,20 @@ public final class R {
         public static final int latest=0x7f020002;
     }
     public static final class id {
-        public static final int textView1=0x7f060000;
+        public static final int blinkbtn=0x7f060003;
+        public static final int bouncebtn=0x7f06000a;
+        public static final int crossfadebtn=0x7f060002;
+        public static final int fadeinbtn=0x7f060000;
+        public static final int fadeoutbtn=0x7f060001;
+        public static final int imageView1=0x7f06000d;
+        public static final int movebtn=0x7f060007;
+        public static final int rotatebtn=0x7f060006;
+        public static final int sequentialbtn=0x7f06000b;
+        public static final int slidedownbtn=0x7f060009;
+        public static final int slideupbtn=0x7f060008;
+        public static final int togetherbtn=0x7f06000c;
+        public static final int zoominbtn=0x7f060004;
+        public static final int zoomoutbtn=0x7f060005;
     }
     public static final class layout {
         public static final int activity_res06=0x7f030000;
