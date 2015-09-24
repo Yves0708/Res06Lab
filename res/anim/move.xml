@@ -8,9 +8,11 @@
     
     <!--0%p Ｐ是表示在parent的ＶＩＥＷ中 -->
     <translate
-        android:fromXDelta="0%p"
-        android:toXDelta="75%p"
-        android:duration="3000"
+        android:fromXDelta="100%p"
+        android:toXDelta="-100%p"
+        android:repeatCount="infinite"
+        android:fillAfter="true"
+        android:duration="4000"
        
         />
    
