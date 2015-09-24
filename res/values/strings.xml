@@ -3,5 +3,7 @@
 
     <string name="app_name">Res06</string>
     <string name="textview_text">Portrait</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
