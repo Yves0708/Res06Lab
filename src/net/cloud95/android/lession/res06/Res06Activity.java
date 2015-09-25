@@ -23,8 +23,11 @@ public class Res06Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res06);
         textView1=(TextView)findViewById(R.id.textView1);
-        textView1.setText("我愛耀樟公");
-        textView1.setTextSize(80);
+        Bundle bundle = getIntent().getExtras();
+        String msg = bundle.getString("message");
+        int size = bundle.getInt("size");
+        textView1.setText(msg);
+        textView1.setTextSize(size);
         //設定動畫監聽的受委任者
 //        animationListener = new AnimationListener() {
 //			
