@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -20,6 +21,7 @@ public class MainActivity extends Activity {
 	private Button btEnter;
 	private Context context;
 	private int size;
+	private TextView textView3;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class MainActivity extends Activity {
 		btEnter = (Button) findViewById(R.id.btEnter);
 		etName = (EditText) findViewById(R.id.etName);
 		sbSize = (SeekBar) findViewById(R.id.sbSize);
+		textView3 = (TextView)findViewById(R.id.textView3);
 		context = this;
 
 		// 設置監聽器
@@ -52,6 +55,7 @@ public class MainActivity extends Activity {
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
 				// TODO Auto-generated method stub
+				textView3.setText(progress+"/200");
 			}
 		});
 
